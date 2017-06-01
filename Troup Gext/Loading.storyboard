@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5lS-4O-9FO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Loading Screen View Controller-->
+        <scene sceneID="yVT-hZ-HsL">
+            <objects>
+                <viewController storyboardIdentifier="LoadingVC" id="5lS-4O-9FO" customClass="LoadingScreenViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tAt-8b-ZNH"/>
+                        <viewControllerLayoutGuide type="bottom" id="cV4-Vi-yCc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XKo-ZA-S2A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go to Settings ➡️️ Messages" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2K-c0-4op">
+                                <rect key="frame" x="16" y="324" width="343" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="LD6-kO-bqP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                                <color key="textColor" red="0.78252509719999996" green="0.1429384061" blue="0.25327259029999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn off iMessages and Group Messaging" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDX-Qo-nOm">
+                                <rect key="frame" x="16" y="358" width="343" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                                <color key="textColor" red="0.78252509719999996" green="0.1429384061" blue="0.25327259029999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vse-TB-ZNn">
+                                <rect key="frame" x="157" y="416" width="62" height="30"/>
+                                <state key="normal" title="Continue"/>
+                                <connections>
+                                    <action selector="continueButtonPressed:" destination="5lS-4O-9FO" eventType="touchUpInside" id="mVV-OJ-HY5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Successfully loaded contacts!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5K-hT-ZIu">
+                                <rect key="frame" x="16" y="77" width="343" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="RVW-EZ-gHb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
+                                <color key="textColor" red="0.090102532409757741" green="0.37441305051813467" blue="0.020666161261696785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to contacts indivually:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luQ-bH-o9P">
+                                <rect key="frame" x="16" y="268" width="343" height="26"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To have your messages sent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsv-fL-tI9">
+                                <rect key="frame" x="16" y="234" width="343" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="Z79-vz-DKw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.76539447587299958" green="0.92230003238341973" blue="0.78535966190083195" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="luQ-bH-o9P" firstAttribute="trailing" secondItem="hsv-fL-tI9" secondAttribute="trailing" id="4vI-1U-aBd"/>
+                            <constraint firstItem="hsv-fL-tI9" firstAttribute="top" secondItem="Q5K-hT-ZIu" secondAttribute="bottom" constant="131" id="53S-I2-NIZ"/>
+                            <constraint firstItem="Q5K-hT-ZIu" firstAttribute="leading" secondItem="XKo-ZA-S2A" secondAttribute="leadingMargin" id="6xC-Yl-pxb"/>
+                            <constraint firstItem="luQ-bH-o9P" firstAttribute="top" secondItem="hsv-fL-tI9" secondAttribute="bottom" constant="8" symbolic="YES" id="A7D-SI-PWh"/>
+                            <constraint firstItem="Q5K-hT-ZIu" firstAttribute="trailing" secondItem="hsv-fL-tI9" secondAttribute="trailing" id="BDa-fy-ZFn"/>
+                            <constraint firstItem="hsv-fL-tI9" firstAttribute="leading" secondItem="m2K-c0-4op" secondAttribute="leading" id="J33-5n-aO0"/>
+                            <constraint firstItem="Q5K-hT-ZIu" firstAttribute="leading" secondItem="hsv-fL-tI9" secondAttribute="leading" id="LuH-bY-jaW"/>
+                            <constraint firstItem="GDX-Qo-nOm" firstAttribute="centerX" secondItem="Vse-TB-ZNn" secondAttribute="centerX" id="O5n-He-aW5"/>
+                            <constraint firstItem="Q5K-hT-ZIu" firstAttribute="trailing" secondItem="XKo-ZA-S2A" secondAttribute="trailingMargin" id="RtH-MX-JgX"/>
+                            <constraint firstItem="GDX-Qo-nOm" firstAttribute="top" secondItem="m2K-c0-4op" secondAttribute="bottom" constant="8" symbolic="YES" id="SeJ-Fc-m5S"/>
+                            <constraint firstItem="m2K-c0-4op" firstAttribute="trailing" secondItem="GDX-Qo-nOm" secondAttribute="trailing" id="YW9-rr-L9e"/>
+                            <constraint firstItem="luQ-bH-o9P" firstAttribute="leading" secondItem="hsv-fL-tI9" secondAttribute="leading" id="aXM-G7-4m0"/>
+                            <constraint firstItem="m2K-c0-4op" firstAttribute="leading" secondItem="GDX-Qo-nOm" secondAttribute="leading" id="cFj-1K-R2f"/>
+                            <constraint firstItem="Vse-TB-ZNn" firstAttribute="top" secondItem="GDX-Qo-nOm" secondAttribute="bottom" constant="42" id="diW-TD-cUg"/>
+                            <constraint firstItem="hsv-fL-tI9" firstAttribute="trailing" secondItem="m2K-c0-4op" secondAttribute="trailing" id="mez-rP-CQq"/>
+                            <constraint firstItem="Q5K-hT-ZIu" firstAttribute="top" secondItem="tAt-8b-ZNH" secondAttribute="bottom" constant="57" id="pue-hm-7MD"/>
+                            <constraint firstItem="m2K-c0-4op" firstAttribute="top" secondItem="luQ-bH-o9P" secondAttribute="bottom" constant="30" id="rgC-sW-a9J"/>
+                            <constraint firstItem="m2K-c0-4op" firstAttribute="top" secondItem="hsv-fL-tI9" secondAttribute="bottom" constant="64" id="yKT-FU-BGg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GSu-gF-PXn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-626.39999999999998" y="-34.632683658170919"/>
+        </scene>
+    </scenes>
+</document>
